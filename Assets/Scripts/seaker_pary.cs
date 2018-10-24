@@ -8,8 +8,8 @@ public class seaker_pary : MonoBehaviour {
 	public Rigidbody prayRb, seekerRb;
 	public GameObject player, pray, seeker;
 	public float seekSpeed, runSpeed;
+
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
@@ -31,7 +31,7 @@ public class seaker_pary : MonoBehaviour {
         if (gameObject.tag == "Seek"){
             if (other.gameObject.name.Equals("Player"))
             {
-                Destroy(player);
+
             }
         }
 	}

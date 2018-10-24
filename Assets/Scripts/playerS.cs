@@ -5,9 +5,11 @@ using UnityEngine;
 public class playerS : MonoBehaviour {
 
 	public float speed;
+    public int eaten;
 	// Use this for initialization
 	void Start () {
         speed = 10f;
+        eaten = 0;
 	}
 	
 	// Update is called once per frame
@@ -23,9 +25,15 @@ public class playerS : MonoBehaviour {
 		transform.Rotate(new Vector3(0, r, 0), Space.World);
 	}
 
-	void OnColliderEnter(Collider other){
+    void OnCollisionEnter(Collision other){
 		if (other.gameObject.tag == "eatable") {
-
+            eaten++;
+            transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
+            GetComponent<Rigidbody>().mass += 0.1f;
+            speed += 0.2f;
 		}
+        if (other.gameObject.tag == "Seek"){
+            gameObject.SetActive(false);
+        }
 	}
 }

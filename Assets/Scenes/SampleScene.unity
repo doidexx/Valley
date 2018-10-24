@@ -547,7 +547,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1328182421}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: 3, z: -24}
+  m_LocalPosition: {x: -50.3, y: 3, z: -97.5}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -584,7 +584,7 @@ MonoBehaviour:
   player: {fileID: 356493943}
   pray: {fileID: 1328182421}
   seeker: {fileID: 1845371641}
-  seekSpeed: 8
+  seekSpeed: 12
   runSpeed: 10
 --- !u!1 &1845371641
 GameObject:
@@ -667,8 +667,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1845371641}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 3, z: 20}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalPosition: {x: 19.7, y: 3, z: 92.5}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -704,7 +704,7 @@ MonoBehaviour:
   player: {fileID: 356493943}
   pray: {fileID: 1328182421}
   seeker: {fileID: 1845371641}
-  seekSpeed: 8
+  seekSpeed: 12
   runSpeed: 10
 --- !u!1 &2146092959
 GameObject:

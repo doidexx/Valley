@@ -30,10 +30,18 @@ public class playerS : MonoBehaviour {
             eaten++;
             transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
             GetComponent<Rigidbody>().mass += 0.1f;
-            speed += 0.2f;
+            speed += 0.5f;
 		}
         if (other.gameObject.tag == "Seek"){
-            gameObject.SetActive(false);
+            if (transform.lossyScale.sqrMagnitude > other.gameObject.transform.lossyScale.sqrMagnitude){
+                other.gameObject.SetActive(false);
+                eaten++;
+                transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
+                GetComponent<Rigidbody>().mass += 0.1f;
+                speed += 0.5f;
+            } else {
+                gameObject.SetActive(false);
+            }
         }
 	}
 }

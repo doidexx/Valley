@@ -7,9 +7,11 @@ public class seaker_pary : MonoBehaviour {
 	// Use this for initialization
 	public Rigidbody prayRb, seekerRb;
 	public GameObject player, pray, seeker;
+	public Material actual;
 	public float seekSpeed, runSpeed;
 
 	void Start () {
+		actual = GetComponent<MeshRenderer>().material;
 	}
 	
 	// Update is called once per frame
@@ -18,21 +20,12 @@ public class seaker_pary : MonoBehaviour {
             prayRb.AddForce(Vector3.Normalize(pray.transform.position - player.transform.position) * runSpeed);
 		}
 		if (gameObject.tag == "Seek") {
-			seekerRb.AddForce(Vector3.Normalize(player.transform.position - seeker.transform.position) * seekSpeed);
-		}
-	}
-
-	void OnCollisionEnter(Collision other) {
-		if (gameObject.tag == "eatable") {
-			if (other.gameObject.name.Equals("Player")) {
-				Destroy(gameObject);
+            if (player.transform.localScale.sqrMagnitude < transform.localScale.sqrMagnitude){
+				seekerRb.AddForce(Vector3.Normalize(player.transform.position - seeker.transform.position) * seekSpeed);
+			} else {
+                seekerRb.AddForce(Vector3.Normalize(seeker.transform.position - player.transform.position) * seekSpeed);
+				actual.color = Color.green;
 			}
 		}
-        if (gameObject.tag == "Seek"){
-            if (other.gameObject.name.Equals("Player"))
-            {
-
-            }
-        }
 	}
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerS : MonoBehaviour {
 
@@ -19,7 +20,7 @@ public class playerS : MonoBehaviour {
     void Update (){
         //Winning condition
         if (eaten == 14) {
-
+            SceneManager.LoadScene(2);
         }
     }
 	
@@ -73,9 +74,10 @@ public class playerS : MonoBehaviour {
                 eaten++;
                 transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
                 GetComponent<Rigidbody>().mass += 0.1f;
-                speed += 1.2f;
+                speed += 2f;
             } else {
                 gameObject.SetActive(false);
+                SceneManager.LoadScene(3);
             }
         }
 	}

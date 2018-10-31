@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\botom.cs" />
      <Compile Include="Assets\Scripts\CameraS.cs" />
      <Compile Include="Assets\Scripts\playerS.cs" />
      <Compile Include="Assets\Scripts\seaker_pary.cs" />

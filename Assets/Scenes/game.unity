@@ -757,8 +757,8 @@ MonoBehaviour:
   seeker: {fileID: 1845371641}
   trigger: {fileID: 1734049750}
   actual: {fileID: 0}
-  seekSpeed: 0.8
-  runSpeed: 0.5
+  seekSpeed: 1.2
+  runSpeed: 0.7
 --- !u!1001 &1351525854
 Prefab:
   m_ObjectHideFlags: 0
@@ -1123,8 +1123,8 @@ MonoBehaviour:
   seeker: {fileID: 1845371641}
   trigger: {fileID: 346820342}
   actual: {fileID: 0}
-  seekSpeed: 0.8
-  runSpeed: 0.5
+  seekSpeed: 1.2
+  runSpeed: 0.7
 --- !u!1 &2146092959
 GameObject:
   m_ObjectHideFlags: 0

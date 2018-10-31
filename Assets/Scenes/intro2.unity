@@ -719,9 +719,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Instructions:\n\nThe objective is really simple. You need to consume as
-    many prays as you can to grow larger than your predators and hunt them down as
-    well.\n\nEatable objects will be green. but don't get touch by the red ones or
-    they will eat you. SURVIVE.\n\nUse the mouse to change the direction in which
+    as much prey as you can to grow larger than your predators and hunt them down
+    as well.\n\nEdible objects will be green but don't get touched by the red ones
+    or they will eat you. SURVIVE.\n\nUse the mouse to change the direction in which
     you are moving.\n\nUse Q to sprint. but be careful it can only be used every 5
     seconds.\n\nThe larger you become the heavier you will be and the slower you will
     move. \n\nGOOD LUCK.\n"

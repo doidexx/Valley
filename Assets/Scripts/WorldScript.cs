@@ -9,6 +9,8 @@ public class WorldScript : MonoBehaviour {
 	public GameObject[] tree;
 	public int seekerN, prayN;
 	void Start () {
+		Cursor.visible = false;
+		Cursor.lockState = CursorLockMode.Locked;
 		for (int i = 0; i < seekerN; i++) {
 			Instantiate(seeker, new Vector3(Random.Range(-200,200), 20, Random.Range(-200, 200)), Quaternion.identity);
             Instantiate(pray, new Vector3(Random.Range(-200, 200), 20, Random.Range(-200, 200)), Quaternion.identity);

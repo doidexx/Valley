@@ -12,6 +12,8 @@ public class botom : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
 		
 	}
 
